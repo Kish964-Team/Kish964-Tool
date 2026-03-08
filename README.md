@@ -227,7 +227,7 @@ kish964.py
 
 **1. Clone the repository and enter the directory**
 ```bash
-git clone [https://github.com/Kish964-Team/Kish964-Tool.git](https://github.com/Kish964-Team/Kish964-Tool.git)
+git clone https://github.com/Kish964-Team/Kish964-Tool.git
 cd Kish964-Tool
 
 ```
