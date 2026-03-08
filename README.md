@@ -221,27 +221,59 @@ kish964.py
 - Python **3.9** or higher
 - `pip` package manager
 
+> **Note:** To avoid dependency conflicts, it is highly recommended (and often required by modern OS environments) to install Kish964 inside an isolated Python Virtual Environment (`venv`).
+
 ### Steps
 
+**1. Clone the repository and enter the directory**
 ```bash
-# 1. Clone the repository
-git clone https://github.com/Kish964-Team/Kish964-Tool.git
-
-# 2. Enter the directory
+git clone [https://github.com/Kish964-Team/Kish964-Tool.git](https://github.com/Kish964-Team/Kish964-Tool.git)
 cd Kish964-Tool
 
-# 3. Install dependencies
-pip install -r requirements.txt
 ```
 
-### `requirements.txt`
+**2. Set up the Virtual Environment & Install Dependencies**
+
+🐧 **For Linux / macOS (Terminal):**
+
+```bash
+# Create the virtual environment
+python3 -m venv venv
+
+# Activate the virtual environment
+source venv/bin/activate
+
+# Install required packages
+pip install -r requirements.txt
+
 ```
+
+🪟 **For Windows (PowerShell):**
+
+```powershell
+# Create the virtual environment
+python -m venv venv
+
+# Activate the virtual environment
+.\venv\Scripts\Activate.ps1
+
+# Install required packages
+pip install -r requirements.txt
+
+```
+
+> **Tip:** When you are finished using the tool, you can exit the virtual environment by simply typing `deactivate` in your terminal or PowerShell.
+
+### `requirements.txt`
+
+```text
 aiohttp>=3.9.0
 aiodns>=3.1.0
 rich>=13.7.0
 pyfiglet>=1.0.2
 mmh3>=4.0.1
 tomli>=2.0.1  ; python_version < "3.11"
+
 ```
 
 ---
